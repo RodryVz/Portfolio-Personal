@@ -1,0 +1,11 @@
+{% for post in posts %}
+
+    <h1>{{post.title}}</h1>
+    <p>{{post.description|striptags|truncatechars:100}}</p>
+
+    <img src="{{post.image.url}}" alt="{{post.title}}">
+
+    <a href="{% url 'blog:post_detail' post.id %}">{{post.title}}</a>
+
+
+{% endfor %}

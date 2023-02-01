@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #111111;
+}
+
+
+.card-project:hover {
+    border: 1px solid rgb(206, 198, 198);
+    cursor: pointer;
+}
+
+
+/* Estilos de botones de a barra */
+
+.nav-item {
+    color: #58575a;
+    border: 2px solid #58575a;
+    border-radius: 10px;
+    padding: 8px 15px;
+    margin: 10px 25px ;
+    background: transparent;
+}
+
+.nav-item:hover {
+    box-shadow: 2px 2px 15px #58575a inset;
+}
+
+.nav-item:active {
+    box-shadow: 2px 2px 20px #58575a inset;
+}

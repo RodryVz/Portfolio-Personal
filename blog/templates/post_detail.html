@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div class="col-ms-8 p-4 text-center text-white border border-secondary">
+
+    <h1>{{post.title}}</h1>
+    
+
+    <img src="{{post.image.url}}" alt="{{post.title}}" class="img-fluid border border-secondary">
+
+
+    <div class="my-4 text-white fs-5">
+
+        {{post.description|safe}}
+    </div>
+</div>
+
+{% endblock %}
